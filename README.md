@@ -1,21 +1,16 @@
 # Embedding
 
-**TODO: Add description**
+Demo word embedding with vector search.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `embedding` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:embedding, "~> 0.1.0"}
-  ]
-end
+```
+source .env
+iex -S mix
+> Embedding.DataLoader.load()
+> Embedding.Search.search_wine("a nice red wine")
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/embedding>.
+## Reference
 
+Wine example pulled from [here](https://dockyard.com/blog/2023/01/11/semantic-search-with-phoenix-axon-bumblebee-and-exfaiss).
